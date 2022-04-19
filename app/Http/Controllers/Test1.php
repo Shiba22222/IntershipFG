@@ -8,7 +8,7 @@ use mysql_xdevapi\Result;
 class Test1 extends Controller
 {
     public function findMax5(Request $request){
-        $test = $request->input('test');
+        $test = $request->input('max5');
         $test1 = explode(',',$test);
         $count = count($test1);
         if ($count <5)
