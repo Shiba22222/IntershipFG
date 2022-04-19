@@ -1,12 +1,12 @@
--Phiên bản Laravel 8.0 - Phiên bản PHP 7.3.
--Chạy lênh php artisan serve.
--Bài 1)Câu a)Link: http://127.0.0.1:8000/findMax5?max5=3,4,5,3,2,3,10,11 để chạy và test bài 1 câu a
--Câu b)
--Trên phpMyAdmin tạo file dữ liệu contact.
--File .env thay đổi tên DB_Database = contact.
--Bài 2)Câu a) Chạy lệnh php artisan migarte để cập nhật CSDL lên phpMyAdmin sau đó kiểm tra lại xem dữ liệu đã có chưa
--Câu b)Link: http://127.0.0.1:8000/getContact/create
- - Nếu không nhập dữ liệu mà nhấn nút submit sẽ có thông báo yêu cầu nhập dữ liệu.
- - Sau khi nhập dữ liệu và ấn vào submit sẽ lưu dữ liệu vào Database.
- - Nếu nhập dữ liệu và sau đó ấn vào Clear sẽ xóa dữ liệu đã nhập một cách nhanh chóng.
- - Dữ liệu đã được lưu vào Database sẽ xuất hiện ở cột bên dưới nơi nhập dữ liệu.
+- Phiên bản Laravel 8.0 - Phiên bản PHP 7.3.
+- Chạy lênh php artisan serve.
+- Bài 1)Câu a)Link: http://127.0.0.1:8000/findMax5?max5=3,4,5,3,2,3,10,11 để chạy và nhập dữ liệu để kiểm tra.
+- Câu b)
+- Trên phpMyAdmin tạo file dữ liệu contact.
+- File .env thay đổi tên DB_Database = contact.
+- Bài 2)Câu a) Chạy lệnh php artisan migarte để cập nhật CSDL lên phpMyAdmin sau đó kiểm tra lại xem dữ liệu đã có chưa
+- Câu b)Link: http://127.0.0.1:8000/getContact/create
+- Nếu không nhập dữ liệu mà nhấn nút submit sẽ có thông báo yêu cầu nhập dữ liệu.
+- Sau khi nhập dữ liệu và ấn vào submit sẽ lưu dữ liệu vào Database.
+- Nếu nhập dữ liệu và sau đó ấn vào Clear sẽ xóa dữ liệu đã nhập một cách nhanh chóng.
+- Dữ liệu đã được lưu vào Database sẽ xuất hiện ở cột bên dưới nơi nhập dữ liệu.
