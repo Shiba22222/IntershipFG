@@ -23,7 +23,28 @@ class Test1 extends Controller
     {
         $input = $request->input('frequent');
         $input1 = explode(',',$input);
-
-        return $input1;
+        $tempt =[];
+        foreach ($input1 as $i)
+        {
+            if (!empty($tempt[$i]))
+            {
+                $tempt[$i] += 1;
+            }
+            else
+            {
+                $tempt[$i] = 1;
+            }
+        }
+        $result = 0;
+        $count = 0;
+        foreach ($tempt as $t => $value)
+        {
+            if ($value > $count)
+            {
+                $count = $value;
+                $result = $t;
+            }
+        }
+        return $result;
     }
 }
