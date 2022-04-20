@@ -6,7 +6,7 @@
 - Bài 2)
 - Trên phpMyAdmin tạo file dữ liệu contact.
 - File .env thay đổi tên DB_Database = contact.
-- Câu a) Chạy lệnh php artisan migarte để cập nhật CSDL lên phpMyAdmin sau đó kiểm tra lại xem dữ liệu đã có chưa
+- Câu a) Chạy lệnh php artisan migrate để cập nhật CSDL lên phpMyAdmin sau đó kiểm tra lại xem dữ liệu đã có chưa
 - Câu b)Link: http://127.0.0.1:8000/getContact/create
 - Nếu không nhập dữ liệu mà nhấn nút submit sẽ có thông báo yêu cầu nhập dữ liệu.
 - Sau khi nhập dữ liệu và ấn vào submit sẽ lưu dữ liệu vào Database.
