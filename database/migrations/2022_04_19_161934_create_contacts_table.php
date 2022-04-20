@@ -15,10 +15,10 @@ class CreateContactsTable extends Migration
     {
         Schema::create('contacts', function (Blueprint $table) {
             $table->id();
-            $table->string('HọvàTên');
+            $table->string('name');
             $table->string('email');
-            $table->integer('Sốđiệnthoại');
-            $table->string('Nộidungliênhệ');
+            $table->string('phone');
+            $table->string('contact');
             $table->timestamps();
         });
     }

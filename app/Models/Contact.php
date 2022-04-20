@@ -9,6 +9,6 @@ class Contact extends Model
 {
     use HasFactory;
     protected $table = 'contacts';
-    protected $fillable = ['HọvàTên','email', 'Sốđiệnthoại', 'Nộidungliênhệ'];
+    protected $fillable = ['name', 'email', 'phone', 'contact'];
     public $timestamps = true;
 }

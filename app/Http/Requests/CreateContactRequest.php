@@ -24,20 +24,20 @@ class CreateContactRequest extends FormRequest
     public function rules()
     {
         return [
-            'HọvàTên' => 'required',
+            'name' => 'required',
             'email' => 'required|email',
-            'Sốđiệnthoại' => 'required',
-            'Nộidungliênhệ' => 'required'
+            'phone' => 'required',
+            'contact' => 'required'
         ];
     }
     public function messages()
     {
         return [
-            'HọvàTên.required' => 'Họ và Tên không được để trống',
+            'name.required' => 'Họ và Tên không được để trống',
             'email.required' => 'Email không được để trống',
             'email.email' => 'Định dạng Email không đúng. Ví dụ abc@gmail.com',
-            'Sốđiệnthoại.required' => 'Số điện thoại không được để trống',
-            'Nộidungliênhệ.required' =>  'Nội dung liên hệ không được để trống'
+            'phone.required' => 'Số điện thoại không được để trống',
+            'contact.required' =>  'Nội dung liên hệ không được để trống'
         ];
     }
 }

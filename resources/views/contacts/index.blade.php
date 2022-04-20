@@ -25,33 +25,33 @@
                                         <div class="form-group">
                                             <label for="first-name-column">Họ và Tên:</label>
                                             <input type="text" id="first-name-column" class="form-control" placeholder=""
-                                                   name="HọvàTên">
+                                                   name="name">
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-12">
                                         <div class="form-group">
                                             <label for="first-name-column">Email:</label>
-                                            <input type="text" id="first-name-column" class="form-control" placeholder=""
+                                            <input type="email" id="first-name-column" class="form-control" placeholder=""
                                                    name="email">
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-12">
                                         <div class="form-group">
                                             <label for="first-name-column">Số điện thoại:</label>
-                                            <input type="text" id="first-name-column" class="form-control" placeholder=""
-                                                   name="Sốđiệnthoại">
+                                            <input type="number" id="first-name-column" class="form-control" placeholder=""
+                                                   name="phone">
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-12">
                                         <div class="form-group">
                                             <label for="first-name-column">Nội dung liên hệ:</label>
                                             <input type="text" id="first-name-column" class="form-control" placeholder=""
-                                                   name="Nộidungliênhệ">
+                                                   name="contact">
                                         </div>
                                     </div>
                                     <div class="col-12 d-flex justify-content-end">
                                         <button type="submit" class="btn btn-primary mr-1 mb-1">Submit</button>
-                                        <input type="button" class="btn btn-primary mr-1 mb-1" onclick="newFunction()" value="Reset">
+                                        <input type="button" class="btn btn-primary mr-1 mb-1" onclick="newFunction()" value="Clear">
                                     </div>
                                 </div>
                             </form>
@@ -65,17 +65,17 @@
                                 <th>Họ và Tên</th>
                                 <th>Email</th>
                                 <th>Số điện thoại</th>
-                                <th>Nội dung mô tả</th>
+                                <th>Nội dung liên hệ</th>
                             </tr>
                             </thead>
                             <tbody>
                             @foreach($getContact as $item)
                                 <tr>
                                     <td class="text-bold-500">{{$loop->iteration}}</td>
-                                    <td>{{$item->HọvàTên}}</td>
-                                    <td>{{$item->Email}}</td>
-                                    <td>{{$item->Sốđiệnthoại}}</td>
-                                    <td>{{$item->Nộidungliênhệ}}</td>
+                                    <td>{{$item->name}}</td>
+                                    <td>{{$item->email}}</td>
+                                    <td>{{$item->phone}}</td>
+                                    <td>{{$item->contact}}</td>
                                 </tr>
                             @endforeach
                             </tbody>
