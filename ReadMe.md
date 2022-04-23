@@ -1,10 +1,11 @@
 - Phiên bản Laravel 8.0 - Phiên bản PHP 7.3.
+- Chạy lệnh composer create-project laravel/laravel:^8.0 example --ignore-platform-reqs
 - Chạy lệnh php artisan serve.
 - Bài 1)
 - Câu a)Link: http://127.0.0.1:8000/findMax5?max5=3,4,5,3,2,3,10,11 để chạy và nhập dữ liệu để kiểm tra.
 - Câu b)Link http://127.0.0.1:8000/findFrequent?frequent=3,7,3 để chạy và nhập dữ liệu để kiểm tra.
 - Bài 2)
-- Trên phpMyAdmin tạo file dữ liệu contact.
+- Trên phpMyAdmin tạo database contact.
 - File .env thay đổi tên DB_Database = contact.
 - Câu a) Chạy lệnh php artisan migrate để cập nhật CSDL lên phpMyAdmin sau đó kiểm tra lại xem dữ liệu đã có chưa
 - Câu b)Link: http://127.0.0.1:8000/getContact/create
